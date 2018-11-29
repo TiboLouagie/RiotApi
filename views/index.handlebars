@@ -1,0 +1,137 @@
+<div class="bg"></div>
+<div class="header">
+  <a href="/" class="logo">LouaLeague</a>
+  <div class="header-right">
+
+
+    <form action="/myform" method="GET">
+
+      <div>
+        <input type="text" name="mytext" id="email" class="cuboid-text" placeholder="Your Summoner Name" autocomplete="off"/>
+
+        <input type="submit" id="submit" />
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+<div class="mid">
+
+<div class="section group">
+	<div class="col span_1_of_2">
+    <section class="o-row o-row--lg">
+          <div class="o-container u-max-width-xs">
+              <form class="c-card" action="#">
+                  <div class="c-card__body">
+                      <h2 class="c-card__title">
+                          SUMMONER PROFILE
+                      </h2>
+
+                      <div class="o-section">
+                          <!-- Custom checkboxes -->
+                          <h5>
+                              Overall
+                          </h5>
+                          <p class="c-label">
+                            Summoner Name: {{data.name}}
+
+                          </p>
+                          <p class="c-label">
+                            Summoner Level: {{data.slvl}}
+                          </p>
+
+                      </div>
+
+                      <div class="o-section">
+                          <!-- Custom checkboxes -->
+                          <h5>
+                              Mastery Level
+                          </h5>
+                          <p class="c-label">
+                            {{data.lvl}}
+                          </p>
+                      </div>
+
+                      <div class="o-section">
+                        <h5>
+                          Summoner Title
+                        </h5>
+
+                        <p class="c-label">
+                          {{data.title}}
+                        </p>
+
+
+
+                      </div>
+
+
+                  </div>
+              </form>
+          </div>
+      </section>
+	</div>
+
+
+
+
+
+
+	<div class="col span_1_of_2">
+    <section class="o-row o-row--lg">
+          <div class="o-container u-max-width-xs">
+              <form class="c-card" action="#">
+                  <div class="c-card__body">
+                      <h2 class="c-card__title">
+                          RANKED PROFILE
+                      </h2>
+
+                      <div class="o-section">
+                          <!-- Custom checkboxes -->
+                          <h5>
+                              {{data.queuetype}}
+                          </h5>
+                          <p class="c-label">
+                            {{data.tier}} {{data.rank}}
+                          </p>
+
+                      </div>
+
+                      <div class="o-section">
+                          <!-- Custom checkboxes -->
+                          <h5>
+                              KDA
+                          </h5>
+
+                          <p class="c-label">
+                            Wins: {{data.wins}}
+                          </p>
+                          <p class="c-label">
+                            Losses: {{data.losses}}
+                          </p>
+
+                          <p class="c-label">
+                            Hotstreak : {{data.hotstreak}}
+                          </p>
+
+
+
+                      </div>
+
+
+
+
+                  </div>
+              </form>
+          </div>
+      </section>
+	</div>
+
+</div>
+</div>
+
+
+
+{{data.id}}
